@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+body {
+    --primary-color:#4CAF50;
+    --primary-lightshade-color:#53bc57;
+    --primary-mid-dark-color:#45ae49;
+    --primary-mid-dark2-color:#3da141;
+    --primary-darkshade-color:#348b37;
+    --accent1: #533483;
+    --accent2: #E94560;
+    --accent3:#FD841F;
+    --text-color:#222;
+    --text-color2:#444;
+    --text-color3: #666;
+    --bg1:#fff;
+    --bg2:#0f346629;
+    --bg3:#eee;
+    --bg4:#dedede;
+    --bg5:#9e9e9e;
+    --bg6:#dee;
+    --bg7:#f8f8f8;
+    --bg8:#f2f3f6;
+    --bg9:#F2F3F6;
+    --bg10:#ccc;
+    --bg11:#4CAF50;
+  }
+  
+  body.light-theme {
+    --primary-color:#4CAF50;
+    --primary-lightshade-color:#53bc57;
+    --primary-mid-dark-color:#45ae49;
+    --primary-mid-dark2-color:#3da141;
+    --primary-darkshade-color:#348b37;
+    --accent1: #533483;
+    --accent2: #E94560;
+    --accent3:#FD841F;
+    --text-color:#222;
+    --text-color2:#444;
+    --text-color3: #666;
+    --bg1:#fff;
+    --bg2:#0f346629;
+    --bg3:#eee;
+    --bg4:#dedede;
+    --bg5:#9e9e9e;
+    --bg6:#dee;
+    --bg7:#f8f8f8;
+    --bg8:#f2f3f6;
+    --bg9:#F2F3F6;
+    --bg10:#ccc;
+    --bg11:#4CAF50;
+  }
+  
+  body.dark-theme {
+    --primary-color:#4CAF50;
+    --primary-lightshade-color:#53bc57;
+    --primary-mid-dark-color:#45ae49;
+    --primary-mid-dark2-color:#3da141;
+    --primary-darkshade-color:#348b37;
+    --accent1: #533483;
+    --accent2: #E94560;
+    --accent3:#FD841F;
+    --text-color:#f8f8f8;
+    --text-color2:#f9f9f9;
+    --text-color3: #eee;
+    --bg1:#252526;
+    --bg2:#222;
+    --bg3:#3e3e42;
+    --bg4:#3e3e42;
+    --bg5:#1e1e1e;
+    --bg6:#3e3e42;
+    --bg7:#f8f8f8;
+    --bg8:#222;
+    --bg9:#333;
+    --bg10:#3e3e42;
+    --bg11:#1e1e1e;
+  }
+  * {
+    border:0px solid rgb(135, 21, 21);
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    padding:0px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  #root {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg9);
+  }
+  .main-wrapper {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .sider {
+    display: none;
+  }
+  .section {
+    width: 100%;
+    background-color: var(--bg9);
+  }
+  /*TABLE STYLESS FOR SMALL SCREEN DEVICES*/
+  .table1 {
+    width: 95%;
+    height:auto;
+    margin:1% 1% 50px 1%;
+    border-radius:4px;
+    border:1px solid var(--bg10);
+    display:inline-flex;
+    flex-wrap: wrap;
+  }
+  .table1-header {
+    width: 40%;
+    height:100%;
+    display: block;
+  }
+  .table1-header .header-title {
+    font-weight: bold;
+    padding:12px;
+    border-bottom: 1px solid var(--bg10);
+    color:var(--text-color);
+    border-right: 1px solid var(--bg10);
+    background-color:var(--bg8);
+    height:60px;
+  }
+  .table1-row-wrapper {
+    width: 60%;
+    height: 100%;
+    display: inline-flex;
+    overflow: auto;
+  }
+  .table1-cell {
+    width: 100%;
+    background-color:var(--bg1);
+    height:60px;
+    padding:12px;
+    overflow: hidden;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--bg10);
+    border-right: 1px solid var(--bg10);
+  }
+  .table1-cell h3 {
+    padding:4px 5px 0px 0px;
+  }
+  /**END OF TABLE STYLES FOR SMALL SCREEN DEVICES**/
+  #touchable {
+    transition: background 0.8s;
+  }
+  #touchable:hover {
+    cursor: pointer;
+    background: var(--bg2) radial-gradient(circle, transparent 1%, var(--bg3) 1%) center/15000%;
+  }
+  #touchable:active {
+    background-color: var(--bg4);
+    background-size: 100%;
+    transition: background 0s;
+  }
+
+  #touchable-light {
+    transition: background 0.8s;
+  }
+  #touchable-light:hover {
+    cursor: pointer;
+    background: rgb(255, 255, 255, 0.1) radial-gradient(circle, transparent 1%, rgb(255, 255, 255, 0.2) ) center/15000%;
+  }
+  #touchable-light:active {
+    background:rgb(255, 255, 255, 0.2);
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+  #touchable-primary {
+    transition: background 0.8s;
+  }
+  
+  #touchable-primary:hover {
+    cursor: pointer;
+    background: var(--primary-lightshade-color) radial-gradient(circle, transparent 1%, var(--primary-darkshade-color) 1%) center/15000%;
+  }
+  
+  #touchable-primary:active {
+    background-color: var(--primary-darkshade-color);
+    background-size: 100%;
+    transition: background 0s;
+  }
+  /*TABLE FOOTER*/
+  .table-footer {
+    width:100%;
+    height: 60px;
+    display: inline-flex;
+    margin:0px 0px 0px 0px;
+    background-color: var( --bg8);
+  }
+  .footer-title {
+    width: 30%;
+    color: var(--text-primary2);
+    padding:20px 15px 15px 15px;
+    border-bottom: 0px solid var( --background5);
+  }
+  .footer-next{
+    width:100px;
+  }
+  .footer-next div{
+    border:1px solid var( --bg10);
+    outline:none;
+    font-weight: bold;
+    text-align: center;
+    padding:10px 10px 15px 10px;
+    border-radius: 4px;
+    margin:10px 15px 15px 15px;
+    height:40px;
+    color:#666;
+    background-color: var( --background2);
+    width:80px;
+  }
+  .footer-items {
+    display: none;
+  }
+  .footer-items select {
+    outline:none;
+    color: var(--text-primary2);
+    margin:0px 10px 10px 5px;
+    height: 30px;
+    border:0px;
+    background-color: inherit;
+  }
+  .footer-far-right {
+    margin-left:auto;
+    display:inline-flex;
+    margin-right: 15px;
+  }
+  .table1-cell-holder {
+    width: 100%;
+    height: 100%;
+  }
+  .table-menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  #footer-select {
+    padding:5px;
+    outline: none;
+    border-radius: 4px;
+    background-color: var(--bg8);
+    border: 1px solid var(--bg10);
+  }
+  .indexes-wrapper {
+    display: inline-flex;
+    margin:10px;
+  }
+  .page-index {
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    display: grid;
+    margin: 5px 5px 0px 5px;
+    place-items: center;
+    color:var(--text-color);
+    border: 0px solid var(--bg10);
+  }
+  .page-index-active {
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    display: grid;
+    margin: 5px 5px 0px 5px;
+    place-items: center;
+    background-color: var(--primary-color);
+    color:#fff;
+    border: 0px solid var(--primary-color);
+  }
+  /*TABLE FOOTER*/
+
+  /*SEARCHBAR**************************/
+.searchbar {
+  width: 100%;
+  display:inline-flex;
+  margin-top: 40px;
+}
+.searchbar input[type="text"]{
+  width: 30%;
+  height: 40px;
+  border-radius:4px;
+  outline: none;
+  padding:12px;
+  border:0px;
+  font-size:17px;
+  margin:15px;
+  box-shadow: 0px 0px 0px 1px var(--bg10);
+}
+.sortbar  button {
+  margin-right: 15px;
+  border-radius:4px;
+  outline: none;
+  padding:10px;
+  border:0px;
+  font-size:17px;
+  margin:15px 0px 15px 0px;
+  box-shadow: 0px 0px 0px 1px var(--bg10);
+}
+.sortbar  .button-primary {
+  border-radius:6px;
+  outline: none;
+  padding:10px 10px 10px 10px;
+  border:0px;
+  color:#fff;
+  background-color: var(--primary-color);
+  font-size:17px;
+  margin:15px 0px 15px 15px;
+}
+.filter input[type="date"] {
+  width: 90%;
+  height: 40px;
+  border-radius:4px;
+  outline: none;
+  padding:12px;
+  border:0px;
+  font-size:17px;
+  margin:0px 15px 5px 10px;
+  box-shadow: 0px 0px 0px 1px var(--bg10); 
+}
+/*END OF SEARCH BAR************************/
+  @media (min-width:1000px) {
+    .container {
+      width: 100%;
+      display:inline-flex;
+    }
+    .sider {
+      display:block;
+      width: 20%;
+      height:100vh;
+      margin:0%;
+      border-right: 1px solid var(--bg10);
+      background-color:var(--bg1);
+    }
+  
+    .section {
+      width:82%;
+      margin:0%;
+      height: 100vh;
+      overflow-y:auto;
+      overflow-x: hidden;
+    }
+  
+    /**TABLE STYLES FOR HUGE SCREEN DEVICES**/
+    .table1 {
+      width: 95%;
+      height:auto;
+      margin:1% 1% 50px 1%;
+      border-radius:4px;
+      display:inline-flex;
+      flex-direction: column;
+  }
+  .table1-cell-holder {
+      width: 100%;
+      height:50px;
+      display:inline-flex;
+  }
+  .table1-header {
+      width: 100%;
+      height:50px;
+      display:inline-flex;
+  }  
+  .table1-header .header-title {
+      font-weight: bold;
+      padding:12px;
+      border-right: 0px solid #ccc;
+      height:50px;
+      width: 35%;
+  }
+  .table1-row-wrapper {
+      width: 100%;
+      height:100%;
+      display:flex;
+      flex-direction: column;
+      overflow:hidden;
+  }
+  .table1-cell {
+      height:50px;
+      padding:12px;
+      border-right: 0px solid #ccc;
+  }
+  
+  /**end of table styles for huge devices*/
+  
+  
+  
+  }
