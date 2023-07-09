@@ -19,9 +19,8 @@ function Home() {
            <DataTable value={students}
              paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]} tableStyle={{ minWidth: '10rem' }}>
                 <Column field="name"  header="Name"></Column>
-                <Column field="level" header="Level"></Column>
-                <Column field="examId"  header="examId"></Column>
-                <Column field="phone" header="Phone"></Column>
+                <Column field="admissionNo" header="Level"></Column>
+                <Column field="createdAt" header="Created Date"></Column>
             </DataTable>
           </div>
     </div>
